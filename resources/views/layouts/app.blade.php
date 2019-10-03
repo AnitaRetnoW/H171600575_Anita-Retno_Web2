@@ -63,7 +63,7 @@
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
-                                    </form>
+                                    </form>x
                                 </div>
                             </li>
                         @endguest
@@ -71,10 +71,20 @@
                 </div>
             </div>
         </nav>
+        
 
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+
+
+        <script
+            src="http://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+            @yield('scripts')
+
 </body>
 </html>
